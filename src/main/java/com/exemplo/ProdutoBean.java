@@ -16,7 +16,7 @@ public class ProdutoBean implements Serializable {
     private Double preco;
     private boolean ativo;
 
-    // Getters e Setters
+    
     public String getDescricao() {
         return descricao;
     }
@@ -57,7 +57,7 @@ public class ProdutoBean implements Serializable {
         this.ativo = ativo;
     }
 
-    // Método para limpar os campos
+  
     public String limpar() {
         this.descricao = null;
         this.dataValidade = null;
@@ -67,27 +67,27 @@ public class ProdutoBean implements Serializable {
         return null;
     }
 
-    // Método para gravar os dados (simulação)
+
     public String gravar() {
         FacesContext context = FacesContext.getCurrentInstance();
 
-        // Validação manual (opcional, já que o required="true" faz isso)
+        
         if (descricao == null || descricao.isEmpty() || preco == null) {
             context.addMessage(null, new FacesMessage("Descrição e Preço são obrigatórios!"));
             return null;
         }
 
-        // Simulação de gravação
+        
         System.out.println("Descrição: " + descricao);
         System.out.println("Data de Validade: " + dataValidade);
         System.out.println("Data de Cadastro: " + dataCadastro);
         System.out.println("Preço: " + preco);
         System.out.println("Ativo: " + ativo);
 
-        // Mensagem de sucesso
+        
         context.addMessage(null, new FacesMessage("Dados gravados com sucesso!"));
 
-        // Limpa os campos após gravar
+       
         limpar();
 
         return null;

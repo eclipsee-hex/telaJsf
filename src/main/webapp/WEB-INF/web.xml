@@ -5,20 +5,20 @@
                              http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
     
-    <!-- Mapeamento do servlet do JSF -->
+    
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
         <servlet-class>jakarta.faces.webapp.FacesServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
-    <!-- Mapeamento do servlet do JSF para todas as URLs com .xhtml -->
+    
     <servlet-mapping>
         <servlet-name>Faces Servlet</servlet-name>
         <url-pattern>*.xhtml</url-pattern>
     </servlet-mapping>
 
-    <!-- Configuração do JSF -->
+    
     <welcome-file-list>
         <welcome-file>index.xhtml</welcome-file>
     </welcome-file-list>

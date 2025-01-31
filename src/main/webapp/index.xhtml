@@ -5,7 +5,7 @@
 <h:head>
     <title>Cadastro de Produto</title>
     <style>
-        /* Estilos básicos para o formulário */
+      
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -64,7 +64,7 @@
     <div class="form-container">
         <h1>Cadastro de Produto</h1>
         <h:form>
-            <!-- Campo Descrição -->
+           
             <div class="form-group">
                 <h:outputLabel for="descricao" value="Descrição:" />
                 <h:inputText id="descricao" value="#{produtoBean.descricao}" maxlength="50" required="true"
@@ -72,7 +72,7 @@
                 <h:message for="descricao" styleClass="error-message" />
             </div>
 
-            <!-- Campo Data de Validade -->
+            
             <div class="form-group">
                 <h:outputLabel for="dataValidade" value="Data de Validade:" />
                 <h:inputText id="dataValidade" value="#{produtoBean.dataValidade}" required="true"
@@ -82,7 +82,7 @@
                 <h:message for="dataValidade" styleClass="error-message" />
             </div>
 
-            <!-- Campo Data de Cadastro -->
+            
             <div class="form-group">
                 <h:outputLabel for="dataCadastro" value="Data de Cadastro:" />
                 <h:inputText id="dataCadastro" value="#{produtoBean.dataCadastro}" required="true"
@@ -92,7 +92,7 @@
                 <h:message for="dataCadastro" styleClass="error-message" />
             </div>
 
-            <!-- Campo Preço -->
+           
             <div class="form-group">
                 <h:outputLabel for="preco" value="Preço:" />
                 <h:inputText id="preco" value="#{produtoBean.preco}" required="true"
@@ -102,13 +102,13 @@
                 <h:message for="preco" styleClass="error-message" />
             </div>
 
-            <!-- Campo Ativo -->
+            
             <div class="form-group">
                 <h:outputLabel for="ativo" value="Ativo:" />
                 <h:selectBooleanCheckbox id="ativo" value="#{produtoBean.ativo}" />
             </div>
 
-            <!-- Botões -->
+            
             <div class="button-group">
                 <h:commandButton value="Limpar" action="#{produtoBean.limpar}" immediate="true" styleClass="btn-clear" />
                 <h:commandButton value="Gravar" action="#{produtoBean.gravar}" styleClass="btn-save" />
